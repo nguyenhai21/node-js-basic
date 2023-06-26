@@ -8,6 +8,7 @@ const initWebRoute =(app)=>{
     router.get('/about', (req, res) => {
           res.send('i am Ben')
         })
+        
         return app.use('/',router) // '/' thêm tiền tố 
 }
 // module.exports=initWebRoute; 14 or 15 true
