@@ -12,12 +12,13 @@ let getHomepage =(req,res)=>{
             data.push({
                 id: row.id,
                 email: row.email,
+                address: row.address,
                 firstName: row.firstName,
                 lastName:row.lastName
             })
         });   
             // console.log(`>>>checkdata: `,typeof(data),JSON.stringify(data))
-            return res.render('test/index.ejs',{dataUser: JSON.stringify(data)})   
+            return res.render('index.ejs',{dataUser: data})   
     });
         
 }
