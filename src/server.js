@@ -10,6 +10,9 @@ const app = express()
 const port = process.env.PORT||3000;// ||3000 backup
 console.log(`>>>check port:`,port)//kiểm tra cổng port
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 // setup view engine
 configViewEngine(app);
 
