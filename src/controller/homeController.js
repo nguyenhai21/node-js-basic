@@ -32,7 +32,7 @@ let getDetailPage =async(req,res)=>{
     return res.send(JSON.stringify(user[0]))
 }
 let createNewUser=async(req,res)=>{
-    console.log('check req: ',req.body)
+    // console.log('check req: ',req.body)
 
     let {firstName, lastName, email, address} = req.body;
 
